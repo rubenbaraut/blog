@@ -1,60 +1,203 @@
 ---
 layout: default
 title: Home
-generator: pagination
-pagination:
-    max_per_page: 5
-use:
-    - posts
 ---
-{% for post in page.pagination.items %}
-    <article class="post">
-        <header>
-            <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></h2>
-        </header>
-        <div>
-            {{ post.blocks.content | truncatehtml(600) | raw }}
+<div class="container">
+
+
+
+
+    <div class="row section topspace">
+        <div class="col-md-12">
+            <p class="lead text-center text-muted">El meu nom és Ruben Baraut Gamez i sóc Enginyer Superior en Informàtica. M'apassiona el desenvolpament web i és per això que s'ha convertit en la meva feina</p>
         </div>
-        <div style="margin-bottom: 10px;">
-            <a href="{{ site.url }}{{ post.url }}/"><b>Continue reading...</b></a>
+    </div> <!-- / section -->
+
+
+
+    <div class="row section recentworks topspace">
+
+        <h2 class="section-title"><span>Feines i col·laboracions recents</span></h2>
+        <br>
+        <br>
+        <div class="thumbnails recentworks row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.wavecontrol.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/wavecontrol_web.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Wavecontrol <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Col·laboració: Wavecontrol
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.dichaea.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/dichaea.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Dichaea <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                <span style="color:red"> * </span>Disseny: Txema Morales
+                                                                |
+                                                                                Html5
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.fesadent.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/fesadent.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Fesadent <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                <span style="color:red"> * </span>Disseny: Txema Morales
+                                                                |
+                                                                                Html5
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.nexe.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/nexe.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Nexe <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Col·laboració: Fados Produccions
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.lakeka.es">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/lakeka.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">La Keka <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Disseny: Esther Ferrutz
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.genoxage.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/genoxage.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Genoxage <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Col·laboració: Fados Produccions
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.challenge-barcelona.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/challenge.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Challenge Barcelona <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Col·laboració: Fados Produccions
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.fitohobby.com">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/fito.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">Fitohobby <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Col·laboració: Fados Produccions
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="thumbnail" target="_blank" href="http://www.2345.cat">
+						<span class="img">
+							<img src="{{ site.url }}/assets/img/2345.jpg" alt="">
+							<span class="cover"><span class="more">Visitar Web →</span></span>
+						</span>
+                    <span class="title">2345 Arquitectes <span>
+                </span></span></a>
+                <span class="details">
+                                                            Symfony
+                                                                |
+                                                                                Html5
+                                                                |
+                                                                                <span style="color:red"> * </span>Disseny: Esther Ferrutz
+                                                                        </span>
+                <h4></h4>
+                <p></p>
+            </div>
         </div>
 
-        <ul class="list-unstyled">
-            {% if post.meta.categories %}
-            <li class="categories-list">
-                {% for category in post.meta.categories %}
-                <a class="label label-info" href="{{ site.url }}/category/{{ category | url_encode(true) }}/">{{ category }}</a>
-                {% endfor %}
-            </li>
-            {% endif %}
-            {% if post.meta.tags %}
-            <li class="tags-list">
-                {% for tag in post.meta.tags %}
-                <a class="label label-primary" href="{{ site.url }}/tag/{{ tag | url_encode(true) }}/">{{ tag | replace('-', ' ') }}</a>
-                {% endfor %}
-            </li>
-            {% endif %}
-            <li class="clearfix"></li>
-        </ul>
-    </article>
-{% endfor %}
-<ul class="pager">
-    {% if page.pagination.next_page %}
-        <li class="previous">
-            <a href="{{ site.url }}{{ page.pagination.next_page.url }}/">&larr; Older posts</a>
-        </li>
-    {% else %}
-        <li class="previous disabled">
-            <span>&larr; Older posts</span>
-        </li>
-    {% endif %}
-    {% if page.pagination.previous_page %}
-        <li class="next">
-            <a href="{{ site.url }}{{ page.pagination.previous_page.url }}/">Newer posts &rarr;</a>
-        </li>
-    {% else %}
-        <li class="next disabled">
-            <span>Newer posts &rarr;</span>
-        </li>
-    {% endif %}
-</ul>
+    </div> <!-- /section -->
+
+
+
+
+    {#<div class="row section topspace">
+        <div class="panel panel-cta"><div class="panel-body">
+            <div class="col-lg-8">
+                <p>Si desitges més informació posat en contacte amb mi , ara he anat a comprar però en quan torni de la peixateria et responc</p>
+            </div>
+            <div class="col-lg-4 text-right">
+                <a href="/contacte" class="button">Contacte</a>
+            </div>
+        </div></div>
+    </div> <!-- /section -->#}
+</div>

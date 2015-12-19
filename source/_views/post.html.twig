@@ -15,7 +15,7 @@
         </div>
 
         <fieldset class="share">
-            <legend><small class="text-muted">If you liked this article, share it</small></legend>
+            <legend><small class="text-muted">Si t'ha agradat el que acabes de llegir, no dubtis a comparti-ho a les xarxes socials!</small></legend>
             <div class="buttons">
                 {% set encodedUrl = (site.url ~ page.url ~ '/') | url_encode(true) %}
                 <a href="http://www.facebook.com/sharer.php?u={{ encodedUrl }}/" target="_blank"
@@ -40,13 +40,13 @@
         <hr>
 
         <ul class="list-unstyled">
-            {% if page.categories %}
+            {#{% if page.categories %}
                 <li class="categories-list">
                     {% for category in page.categories %}
                         <a class="label label-info" href="{{ site.url }}/category/{{ category | url_encode(true) }}/">{{ category }}</a>
                     {% endfor %}
                 </li>
-            {% endif %}
+            {% endif %}#}
             {% if page.tags %}
                 <li class="tags-list">
                     {% for tag in page.tags %}
