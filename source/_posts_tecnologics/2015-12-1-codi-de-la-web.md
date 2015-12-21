@@ -1,7 +1,7 @@
 ---
 title: Codi d'aquesta web - Sculpin
 categories:
-    - blog-tecnologic
+    - programació
 tags:
     - php
     - sculpin

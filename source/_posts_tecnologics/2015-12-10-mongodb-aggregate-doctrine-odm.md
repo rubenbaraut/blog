@@ -1,7 +1,7 @@
 ---
 title: Doctrine ODM i pipeline de mongo Aggregate Framework
 categories:
-    - blog-tecnologic
+    - programació
 tags:
     - php
     - symfony2

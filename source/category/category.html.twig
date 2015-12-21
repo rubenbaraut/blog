@@ -6,6 +6,8 @@ pagination:
     provider: page.category_posts
 
 ---
+
+
 {% block title %}{{ site.title }} &mdash; {{ page.title }} &mdash; "{{ page.category }}"{% endblock %}
 {% block content %}
     {% for post in page.pagination.items %}

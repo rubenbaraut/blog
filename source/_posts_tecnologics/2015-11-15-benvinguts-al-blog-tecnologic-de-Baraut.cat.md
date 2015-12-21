@@ -1,8 +1,5 @@
 ---
 title: Benvinguts al blog tecnològic de Baraut.cat!
-categories:
-    - blog-tecnologic
-
 ---
 
 Hola a tothom! Aquesta entrada és només la primera de lo que espero que sigui una llarga llista d'entrades relacionades 

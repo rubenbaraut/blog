@@ -1,0 +1,52 @@
+---
+layout: default
+generator: pagination
+pagination:
+    provider: data.posts_tecnologics
+use:
+    - posts_tecnologics
+    - posts_tecnologics_tags
+---
+{% block title %}{{ site.title }} &mdash; {{ page.title }} &mdash; "{{ page.category }}"{% endblock %}
+{% block content %}
+{% for post in data.posts_tecnologics %}
+<article class="post">
+    <header>
+        <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></h2>
+    </header>
+    <div>
+        {{ post.blocks.content | truncatehtml(600) | raw }}
+    </div>
+    <div style="margin-bottom: 10px;">
+        <a href="{{ site.url }}{{ post.url }}/"><b>Continua llegint...</b></a>
+    </div>
+
+    <ul class="list-unstyled">
+        {#{% if post.meta.categories %}
+        <li class="categories-list">
+            {% for category,s in post.meta.categories %}
+            <a class="label label-info" href="{{ site.url }}/category/{{ category | url_encode(true) }}/">{{ category }}</a>
+            {% endfor %}
+        </li>
+        {% endif %}#}
+        {% if post.meta.tags %}
+        <li class="tags-list">
+            {% for tag in post.meta.tags %}
+            <a class="label label-primary" href="{{ site.url }}/tag/{{ tag | url_encode(true) }}/">{{ tag | replace('-', ' ') }}</a>
+            {% endfor %}
+        </li>
+        {% endif %}
+        <li class="clearfix"></li>
+    </ul>
+</article>
+{% endfor %}
+
+<div>
+    <div>
+        {% include 'partials/paginador.html.twig' %}
+
+    </div>
+</div>
+
+
+{% endblock content %}
