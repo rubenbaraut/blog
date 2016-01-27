@@ -9,4 +9,4 @@ Em passo el dia desenvolupant en entorns web i voldria compartir amb vosaltres t
 penso .. 'ruben que bo que ets'. Potser a molts lectors els hi semblen coses òbvies però en quan m'han passat us ben asseguro
  que les he passat canutes per a solucionar-ho.
 Moltes de les coses estaran relacionades amb Symfony, per mi, dels millors Frameworks en PHP que existeixen.
-Intentaré explicar-ho de la forma més clara possible, si en algo vaig equivocat, acepto tot tipus de comentaris.
+Intentaré explicar-ho de la forma més clara possible, si en algo vaig equivocat, accepto tot tipus de comentaris.

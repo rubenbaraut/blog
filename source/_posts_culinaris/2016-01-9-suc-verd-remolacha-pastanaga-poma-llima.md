@@ -7,17 +7,17 @@ tags:
     - colesterol
 ---
 
-A continuació us presento un suc verd que ens ajudarà a depurar el cos després dels grans àpats que ens hem pres
+A continuació, us presento un suc verd que ens ajudarà a depurar el cos després dels grans àpats que ens hem pres
 durant les festes de nadal. Té efectes depuratius i diuen que va bé per baixar els límits de colesterol.
 
 <img style="width:400px" src="{{ site.url }}/assets/img/suc_verd_1.jpg" alt="">
 
 Llistat d'ingredients:
 
-- Una cogombre
+- Un cogombre
 - Una tassa d'espinacs
 - Una tassa de juliverd
-- Mitja taça d'api
+- Mitja tassa d'api
 - Una llima
 - Una poma verda
 

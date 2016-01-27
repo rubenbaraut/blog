@@ -10,23 +10,23 @@ tags:
 ---
 Segurament molts de vosaltres utilitzeu MongoDb per a persistir les dades. Per a fer-ho s'ha d'utilitzar Doctrine ODM.
 
-A continuació us explicaré una forma senzilla de fer servir el Framework Aggregate i així podeu fer agrupacions de les 
+A continuació, us explicaré una forma senzilla de fer servir el Framework Aggregate i així podeu fer agrupacions de les 
 dades ( similar al group by de SQL) o bé simplement per a fer una seqüència de querys que s'encadenen una a una i ens 
 permeten utilitzar el resultat d'una query com a entrada de la query anterior.
 
-Primer de tot Agafem el document Collection que necessitem per a fer la query. En aquest cas $this es el Repository de 
+Primer de tot agafem el document Collection que necessitem per a fer la query. En aquest cas $this és el Repository de 
 qualsevol entitat.
 ~~~php
 $dc = $this->getDocumentManager()->getDocumentCollection('PortalBundle:Portal');
 ~~~
-A continuació ens creem un array on anirem posant totes les operacions que volguem que es vagin executant dins del 
+A continuació, ens creem un array on anirem posant totes les operacions que volguem que es vagin executant dins del 
 pipeline. En aquest cas, serà un pipeline que es composarà de tres passos (stages).
 
-Al primer pas fem un match per a buscar una serie de Ids de Clients
+En el primer pas, fem un match per a buscar una sèrie de Identificadors de Clients
 ~~~php
 $pipeline[] = [ '$match' => [ 'client' => $idClients ] ];
 ~~~
-A continuació fem un group per tal de sumar el camp totalImpresions de tots els clients trobats
+A continuació, fem un group per tal de sumar el camp totalImpresions de tots els clients trobats
 ~~~php
 $pipeline[] = [ '$group' => [ '_id' => '', 'total' => ['$sum' => '$totalImpresions'] ] ];
 ~~~

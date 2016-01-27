@@ -18,18 +18,18 @@ El generador en qüestió és  <a target='_blank' href="https://sculpin.io/">Scu
 
 El que m'ha fet decidir per aquesta eina són els següents punts:
 
-- El temps de desenvolupament de la web ha estat de 4 hores, i lo que més feina a portat ha estat buscar un template i aplicar-lo.
+- El temps de desenvolupament de la web ha estat de 4 hores, i el que més feina a portat ha estat buscar un template i aplicar-lo.
 - Sculpin genera el contingut mitjançant fitxers Markdown, com sóc programador, no és un problema per mi generar el
-contingut utilitzant marcatge. Apart d'això, fet d'aquesta forma no necessito Back-End  amb tot el que això suposa
+contingut utilitzant marcatge. A part d'això, fet d'aquesta forma no necessito Back-End  amb tot el que això suposa
 (usuaris, seguretat, pujada de fitxers, etc...)
 - Es poden afegir llibreries i bundles de symfony utilitzant composer, per tant puc afegir-li totes les funcionalitats que vulgui.
 - La web incrementa la velocitat de carrega d'una forma increïble.
 
 El template utilitzat està extret de  <a target='_blank' href='http://pozhilov.com'> **Sergey Pozhilov**</a>
 
-Apart d'això, el codi base d'esculpin està extret de <a target='_blank' href="https://github.com/acelaya/blog">Alejandro Celaya </a>. 
-Bàsicament he agafat aquest projecte perquè els css per defecte ja em semblaven bastant correctes, i apart, ja tenia montada
-una estructura que m'anava perfecte per al que jo volia fer. Per altra banda, he vist que a la seva web feia servir un cercador
+A part d'això, el codi base d'esculpin està extret d'<a target='_blank' href="https://github.com/acelaya/blog">Alejandro Celaya </a>. 
+Bàsicament, he agafat aquest projecte perquè els css per defecte ja em semblaven bastant correctes, i a part, ja tenia montada
+una estructura que m'anava perfecte pel que jo volia fer. Per altra banda, he vist que a la seva web feia servir un cercador
 i que funciona molt bé i que a mi també m'agradaria fer-lo servir
 
 Per tal de generar els comentaris dels posts, utilitzo la plataforma Disqus, que s'integra perfectament amb sculpin només
