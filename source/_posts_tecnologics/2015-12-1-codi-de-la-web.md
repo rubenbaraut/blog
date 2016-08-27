@@ -9,7 +9,7 @@ tags:
 ---
 
 Si algú té curiositat per veure com està feta aquesta web, us passo l'enllaç al github, qualsevol errada / millora serà
-benvinguda. <a target='_blank' href='https://github.com/sitobcn82/ruben.baraut'>https://github.com/sitobcn82/ruben.baraut</a>
+benvinguda. <a target='_blank' href='https://github.com/sitobcn82/blog.git'>https://github.com/sitobcn82/blog.git</a>
 
 Tot i ser programador de Symfony, he decidit fer aquesta web amb un generador PHP de contingut estàtic que funciona amb
 fitxers de tipus Markdown i que utilitza Twig per a renderitzar els templates.

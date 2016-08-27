@@ -43,9 +43,12 @@
         <div id="wrap">
             <div class="container" id="main">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
 
+                    </div>
+                    <div class="pull-right col-md-2">
+                        {% block all_tags %}{% endblock %}
                     </div>
                 </div>
             </div>

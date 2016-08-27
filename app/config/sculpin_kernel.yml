@@ -8,12 +8,3 @@ sculpin_content_types:
           taxonomies:
               - tags
               - categories
-    posts_culinaris:
-          type: path
-          path: _posts_culinaris
-          permalink: :year/:month/:day/:slug_title/
-          layout: default
-          enabled: true
-          taxonomies:
-              - tags
-              - categories

@@ -52,6 +52,11 @@
                     {% for tag in page.tags %}
                         <a class="label label-primary" href="{{ site.url }}/tag/{{ tag | url_encode(true) }}/">{{ tag | replace('-', ' ') }}</a>
                     {% endfor %}
+                    <a class="label label-primary" href="{{ site.url }}/tags/">Veure tots els tags</a>
+                </li>
+            {% else %}
+                <li class="tags-list">
+                    <a class="label label-primary" href="{{ site.url }}/tags/">Veure tots els tags</a>
                 </li>
             {% endif %}
             <li class="clearfix"></li>

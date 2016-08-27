@@ -9,7 +9,7 @@ use:
 ---
 {% block title %}{{ site.title }} &mdash; {{ page.title }} &mdash; "{{ page.category }}"{% endblock %}
 {% block content %}
-{% for post in data.posts_tecnologics %}
+{% for post in data.posts_tecnologics |reverse %}
 <article class="post">
     <header>
         <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></h2>
@@ -34,13 +34,17 @@ use:
             {% for tag in post.meta.tags %}
             <a class="label label-primary" href="{{ site.url }}/tag/{{ tag | url_encode(true) }}/">{{ tag | replace('-', ' ') }}</a>
             {% endfor %}
+            <a class="label label-primary" href="{{ site.url }}/tags/">Veure tots els tags</a>
+        </li>
+        {% else %}
+        <li class="tags-list">
+            <a class="label label-primary" href="{{ site.url }}/tags/">Veure tots els tags</a>
         </li>
         {% endif %}
         <li class="clearfix"></li>
     </ul>
 </article>
 {% endfor %}
-
 <div>
     <div>
         {% include 'partials/paginador.html.twig' %}
@@ -50,3 +54,13 @@ use:
 
 
 {% endblock content %}
+
+{% block all_tags %}
+    <ul style="list-style: none;">
+        <h4>Tags</h4>
+        {% for tag,posts in data.posts_tecnologics_tags %}
+            <li><a class="label label-primary" href="{{ site.url }}/tag/{{ tag | url_encode(true) }}/">{{ tag | replace('-', ' ') }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
