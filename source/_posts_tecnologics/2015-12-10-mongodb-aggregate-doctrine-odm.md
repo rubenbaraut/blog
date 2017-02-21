@@ -1,5 +1,6 @@
 ---
 title: Doctrine ODM i pipeline de mongo Aggregate Framework
+date: 2015-12-10 22:22
 categories:
     - programació
 tags:
