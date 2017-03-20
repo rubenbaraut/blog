@@ -1,5 +1,6 @@
 ---
 title: Instal·lació global de paquets amb composer
+draft: true
 ---
 
 Al principi del llibre es parla de patrons de disseny.
