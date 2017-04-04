@@ -21,7 +21,7 @@ Principis SOLID:
  ~~~
  Té dues responsabilitats. Per un costat, extreu informació de l'usuari, recupera l'estat de l'usuari.
  Per altra banda s'encarrega de la busqueda i de la persistència de l'usuari a la base de dades. Per a solucionar-ho, 
- haríem de separar aquesta classe en dues.
+ hauríem de separar aquesta classe en dues.
   ~~~php
  class User {
     public function getName() {}
