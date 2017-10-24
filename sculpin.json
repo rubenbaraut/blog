@@ -1,13 +1,13 @@
 {
-    "name": "acelaya/blog",
-    "description": "Blog about software development, agile methodologies and open source software",
+    "name": "rbaraut/blog",
+    "description": "Blog about software development",
     "type": "sculpin-skeleton",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alejandro Celaya Alastrué",
-            "email": "alejandro@alejandrocelaya.com",
-            "homepage": "http://www.alejandrocelaya.com"
+            "name": "Ruben Baraut Gamez",
+            "email": "ruben@baraut.cat",
+            "homepage": "http://www.ruben.baraut.com"
         }
     ],
     "autoload": {
